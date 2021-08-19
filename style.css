@@ -1,0 +1,53 @@
+h1 {
+    font-family: "Black Ops One";
+    color: #DB4C40;
+}
+
+p {
+    font-family: Roboto;
+}
+
+body {
+    background-color: #F0C987;
+}
+
+.foto {
+    width: 450px;
+    height: 500px;
+    background-image: url("/image/eu.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px #89BD9E;
+    background-size: cover;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.tam {
+    font-size: 14px;
+}
+
+#destaque {
+    font-weight: 700;
+}
+
+.tam2 {
+    font-size: 18px;
+}
+
+/* a {
+    text-decoration: none;
+    background-color: #89BD9E;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+#fotoa {
+    text-decoration: none;
+    /* background-color: #F0C987; */
+    padding: 10px 10px;
+    margin: 10px;
+} */
