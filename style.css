@@ -1,15 +1,24 @@
-h1, h2 {
-    
+h1 {
     background-color: #89BD9E;
     font-family: "Black Ops One";
+    font-size: 60px;
     color: #DB4C40;
     text-align: center;
     border-radius: 10px;
     padding: 5px;
 }
 
+h2 {
+  font-size: 35px;
+  color: #DB4C40;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 body {
     font-family: Roboto;
+    font-size: 25px;
     text-align: center;
     background-color: #F0C987;
     max-width: 1200px;
@@ -17,33 +26,61 @@ body {
     color: #3E363F;
 }
 
-.foto {
-    width: 100%;
-    text-align: center;
+section {
+  margin: 2em auto 2em auto;
 }
 
-#foto1 {
-    width: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
+/* About me */
+
+#about-me {
+    max-width: 98%;
+    text-align: center;
+    display: flex;
+}
+
+.picture {
+    width: 200px;
     border-radius: 10px;
     box-shadow: 5px 5px #89BD9E;
+    margin-left: 100px;
 }
+
+.desc {
+  max-width: 40%;
+  margin: 20px auto;
+}
+
+.about-me {
+  margin-block: auto;
+}
+
+/* Skills */
+
+#skills {
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  background-color: #89BD9E;
+  border-radius: 10px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  
+}
+
+.icons {
+  width: 10%;
+}
+
+.hard {
+  flex: 1;
+}
+
+
+
+/* */
 
 strong {
     font-weight: 500;
-}
-
-.tam {
-    font-size: 14px;
-}
-
-#destaque {
-    font-weight: 700;
-}
-
-.tam2 {
-    font-size: 18px;
 }
 
 .desc {
@@ -65,7 +102,7 @@ strong {
 .table li {
   display: inline;
   margin: 0 auto;
-  
+
 }
 
 #lists {
@@ -77,12 +114,12 @@ strong {
   text-align: left;
 }
 
-#desc {
-  max-width: 200px;
-  margin: 20px auto;
-}
 
 a {
   text-decoration: none;
   font-weight: 600;
+}
+
+.describe {
+  text-align: left;
 }
