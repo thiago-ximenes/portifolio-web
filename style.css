@@ -11,15 +11,12 @@ body {
     background-color: #F0C987;
 }
 
-.foto {
-    width: 450px;
-    height: 500px;
-    background-image: url("/image/eu.jpg");
+#foto1 {
+    width: 400px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
     box-shadow: 5px 5px #89BD9E;
-    background-size: cover;
 }
 
 strong {
