@@ -1,14 +1,25 @@
-h1 {
+h1, h2 {
+    
+    background-color: #89BD9E;
     font-family: "Black Ops One";
     color: #DB4C40;
-}
-
-p {
-    font-family: Roboto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 body {
+    font-family: Roboto;
+    text-align: center;
     background-color: #F0C987;
+    max-width: 1200px;
+    margin: auto;
+    color: #3E363F;
+}
+
+.foto {
+    width: 100%;
+    text-align: center;
 }
 
 #foto1 {
@@ -35,16 +46,43 @@ strong {
     font-size: 18px;
 }
 
-/* a {
-    text-decoration: none;
-    background-color: #89BD9E;
-    padding: 10px 10px;
-    margin: 10px;
+.desc {
+    text-align: center;
 }
 
-#fotoa {
-    text-decoration: none;
-    /* background-color: #F0C987; */
-    padding: 10px 10px;
-    margin: 10px;
-} */
+.menu, .menu:visited {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #DB4C40;
+  margin: 5px;
+  width: 25%;
+}
+
+.table li {
+  display: inline;
+  margin: 0 auto;
+  
+}
+
+#lists {
+  max-width: 200px;
+  margin: 0 auto auto auto;
+}
+
+#lists li {
+  text-align: left;
+}
+
+#desc {
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
