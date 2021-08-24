@@ -30,6 +30,34 @@ section {
   margin: 2em auto 2em auto;
 }
 
+/* Top Menu */
+
+.menu ul li {
+
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #DB4C40;
+  width: 25%;
+}
+
+.menu ul a li:hover {
+  transform: translateY(-3px);
+  box-shadow: 5px 5px #DB4C40;
+}
+
+.menu li {
+  display: inline;
+  margin: 0 auto;
+
+}
+
+.menu a {
+  color: white;
+}
+
 /* About me */
 
 #about-me {
@@ -87,23 +115,7 @@ strong {
     text-align: center;
 }
 
-.menu, .menu:visited {
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 10px;
-  background-color: #DB4C40;
-  margin: 5px;
-  width: 25%;
-}
 
-.table li {
-  display: inline;
-  margin: 0 auto;
-
-}
 
 #lists {
   max-width: 200px;
