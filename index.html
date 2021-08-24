@@ -14,21 +14,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <nav class="menu">    
+      <ul type=none>
+        <a href="#about-me"><li>Descrição</li></a>
+        <a href="#skills"><li>Habilidades</li></a>
+        <a href="#blog"><li>Blog</li></a>
+      </ul>
+    </nav>
+  </header>
 
-  <nav class="menu">    
-        <ul type=none>
-          <a href="#about-me"><li>Descrição</li></a>
-          <a href="#skills"><li>Habilidades</li></a>
-          <a href="#blog"><li>Blog</li></a>
-        </ul>
-  </nav>
-
-
+  <main>
     <h1>Thiago Ximenes Lima</h1>
 
-    <section id="about-me">
+    <section class="about-me">
         
-      <div class="about-me">
+      <div>
         <h2 class="desc">Sobre mim</h2>
 
         <p><em>Sou um <strong>brasileiro</strong> apaixonado por tecnologia, moro no <strong>Rio de Janeiro</strong> e me interesso por marcas que querem mudar o mundo.</em></p>
@@ -37,46 +38,50 @@
 
       <div>
 
-        <a href="image/eu.jpg"><img class="picture" src="image/eu.jpg" alt="Thiago Ximenes - Foto de perfil"></a>
+        <a href="image/eu.jpg" target="_blank"><img class="picture" src="image/eu.jpg" alt="Thiago Ximenes - Foto de perfil"></a>
 
       </div>
 
-      </section>
+    </section>
    
-    <section id="skills">
+    <section class="skills">
 
-      <div class="hard">
+      <div>
 
         <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/terminal-icon.png" alt="Terminal icon" class="icons">
 
-        
 
           <h2>Hard-skills</h2>
 
           <ul type="square">
-              <li id="destaque" class="tam2">Boa Comunicação</li>
-              <li class="tam">Resolução de Problemas</li>
-              <li class="tam2">Programação Web</li>
-              <li class="tam">Liderança</li>
-              <li class="tam2">Inteligência Emocional</li>
-              <li class="tam">Interesse em Aprender</li>
+            <li id="destaque" class="tam2"><strong>Programação Web</strong></li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Javascript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Git</li>
+            <li>WordPress</li>
+            <li>Linux</li>
+            <li>MySQL</li>
+            
           </ul>
 
-        </div>
-        <div class="hard">
+      </div>
+        <div>
 
           <img src="https://pngimage.net/wp-content/uploads/2018/06/soft-skill-icon-png-7.png" alt="Emotional Inteligence Icon" class="icons">
 
           <h2 class="soft">Soft-skills</h2>
 
-          <ul type="square">
-              <li id="destaque" class="tam2">Boa Comunicação</li>
-              <li class="tam">Resolução de Problemas</li>
-              <li class="tam2">Programação Web</li>
-              <li class="tam">Liderança</li>
-              <li class="tam2">Inteligência Emocional</li>
-              <li class="tam">Interesse em Aprender</li>
-            </ul>
+          <ul>
+            <li><strong>Comunicativo</strong></li>
+            <li>Resolução de Problemas</li>
+            <li>Liderança</li>
+            <li>Inteligência Emocional</li>
+            <li>Empático</li>
+            <img src="image/separator.png" alt="fruit tree">
+          </ul>
 
       </div>
 
@@ -84,6 +89,6 @@
       <h2 id="blog">Blog Favorito</h2>
       <ul type="square">
           <li><a href="https://diolinux.com.br/">🔗 Diolinux</a></ul></li>
-      
+  </main>
 </body>
 </html>
