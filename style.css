@@ -1,72 +1,138 @@
-h1, h2 {
-    
+h1 {
     background-color: #89BD9E;
     font-family: "Black Ops One";
+    font-size: 60px;
     color: #DB4C40;
     text-align: center;
     border-radius: 10px;
     padding: 5px;
 }
 
+h2 {
+  font-size: 35px;
+  color: #DB4C40;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 body {
     font-family: Roboto;
+    font-size: 25px;
     text-align: center;
     background-color: #F0C987;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: auto;
+    padding-left: min(10px);
+    padding-right: min(10px);
     color: #3E363F;
 }
 
-.foto {
-    width: 100%;
-    text-align: center;
-}
-
-#foto1 {
-    width: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
-    box-shadow: 5px 5px #89BD9E;
+section {
+  margin: 2em auto 2em auto;
 }
 
 strong {
-    font-weight: 500;
+  font-weight: 500;
 }
 
-.tam {
-    font-size: 14px;
-}
+/* Top Menu */
 
-#destaque {
-    font-weight: 700;
-}
+.menu ul li {
 
-.tam2 {
-    font-size: 18px;
-}
-
-.desc {
-    text-align: center;
-}
-
-.menu, .menu:visited {
-  color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
   background-color: #DB4C40;
-  margin: 5px;
   width: 25%;
 }
 
-.table li {
+.menu ul a li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 5px #DB4C4090;
+}
+
+.menu li {
   display: inline;
   margin: 0 auto;
+
+}
+
+.menu a {
+  color: white;
+}
+
+/* About me */
+
+.about-me {
+    max-width: 98%;
+    text-align: center;
+    display: flex;
+}
+
+.picture {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #89BD9E;
+    margin-left: 100px;
+}
+
+.picture:hover {
+  transform: translate(-10px) scale(1.1);
+}
+
+.desc {
+  max-width: 40%;
+  margin: 20px auto;
+}
+
+.about-me div{
+  margin-block: auto;
+}
+
+/* Skills */
+
+.skills {
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  background-color: #89BD9E;
+  border-radius: 10px;
+  padding-top: 2em;
+  padding-bottom: 2em;
   
 }
+
+.skills strong {
+  font-weight: 700;
+}
+
+.icons {
+  width: 20%;
+}
+
+.skills div{
+  flex: 1;
+}
+
+.skills ul img {
+  width: 60%;
+  margin-top: 13%;
+}
+
+
+
+/* */
+
+
+
+.desc {
+    text-align: center;
+}
+
+
 
 #lists {
   max-width: 200px;
@@ -77,12 +143,12 @@ strong {
   text-align: left;
 }
 
-#desc {
-  max-width: 200px;
-  margin: 20px auto;
-}
 
 a {
   text-decoration: none;
   font-weight: 600;
+}
+
+.describe {
+  text-align: left;
 }
