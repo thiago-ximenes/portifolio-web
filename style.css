@@ -36,6 +36,10 @@ strong {
   font-weight: 500;
 }
 
+a {
+  color:#3E363F
+}
+
 /* Top Menu */
 
 .menu ul li {
@@ -127,6 +131,12 @@ strong {
   margin-top: 13%;
 }
 
+/* Blog */
+
+.img-blogs {
+  width: 600px;
+  border-radius: 20px;
+}
 
 
 /* */
