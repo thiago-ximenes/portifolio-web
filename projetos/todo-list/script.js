@@ -60,41 +60,26 @@ function getItems() {
   });
 }
 
-function wichSelection(upDown) {
+function moveUp() {
   items.forEach((item) => {
-    if (upDown === 'down') {
-      if (item.classList.contains('selected') && item.nextSibling) {
-        lista.insertBefore(item, item.nextSibling.nextSibling);
-      } else if (item.classList.contains('selected')) {
-        alert('Não há mais movimentos possíveis nesta direção');
-      }
-    } else if (upDown === 'up') {
-      if (item.classList.contains('selected') && item.previousSibling) {
-        lista.insertBefore(item, item.previousSibling);
-      } else if (item.classList.contains('selected')) {
-        alert('Não há mais movimentos possíveis nesta direção');
-      }
+    const selected = item.classList.contains('selected');
+    if (selected && item.previousSibling) {
+      lista.insertBefore(item, item.previousSibling);
+    } else if (selected) {
+      alert('Não há mais movimentos possíveis nesta direção');
     }
   });
 }
-function moveItem(upOrDown = false) {
-  // source https://stackoverflow.com/questions/4793604/how-to-insert-an-element-after-another-element-in-javascript-without-using-a-lib
-  const direction = upOrDown;
-  if (direction) {
-    wichSelection('down');
-  } else {
-    wichSelection('up');
-  }
-
-  getItems();
-}
 
 function moveDown() {
-  moveItem(true);
-}
-
-function moveUp() {
-  moveItem(false);
+  items.forEach((item) => {
+    const selected = item.classList.contains('selected');
+    if (selected && item.nextSibling) {
+      lista.insertBefore(item, item.nextSibling.nextSibling);
+    } else if (selected) {
+      alert('Não há mais movimentos possíveis nesta direção');
+    }
+  });
 }
 
 function removeSelected() {
