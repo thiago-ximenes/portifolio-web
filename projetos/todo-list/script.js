@@ -32,6 +32,7 @@ function lineThrough(item) {
 }
 
 function saveTasks() {
+  getItems()
   const itemArray = [];
   // source: https://stackoverflow.com/questions/61758780/how-to-set-css-style-to-local-storage-for-dynamically-created-list-using-javascr
   // usei pra aprender como tratar o json pra receber parâmetros
@@ -48,6 +49,7 @@ function saveTasks() {
       });
     }
   });
+  localStorage.clear()
   localStorage.setItem('tasks', JSON.stringify(itemArray));
   alert('Tarefas salvas!');
 }
