@@ -67,3 +67,7 @@ li {
 #remover-selecionado {
   align-self: center;
 }
+
+.container {
+  max-width: 700px !important;
+}
