@@ -133,21 +133,6 @@ clearTaskButton.addEventListener('click', () => {
   items.forEach((item) => {
     if (item.classList.contains('completed')) {
       item.remove();
-      items.forEach((item) => {
-        const itemArray = [];
-        if (item.classList.contains('completed')) {
-          itemArray.push({
-            name: item.innerText,
-            completed: true,
-          });
-        } else {
-          itemArray.push({
-            name: item.innerText,
-            completed: false,
-          });
-        }
-      });
-      localStorage.setItem('tasks', JSON.stringify(itemArray));;
     }
   });
 });
