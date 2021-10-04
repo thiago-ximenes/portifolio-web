@@ -92,3 +92,7 @@ header form button {
 .familyInput input {
   margin-right: 10px;
 }
+
+#textarea {
+  width: 100%;
+}
