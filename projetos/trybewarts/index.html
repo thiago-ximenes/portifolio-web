@@ -37,20 +37,22 @@
 
         <form id="evaluation-form" class="mb-4">
             <h2 class="display-6 text-center">Formulário de Inscrições</h2>
-            <div id="fullName">
-                <input id="input-name" class="form-control" placeholder="Nome" type="text">
-
-                <input id="input-lastname" class="form-control" placeholder="Sobrenome" type="text">
+            <div id="fullName" class="row g-1">
+                <div class="col"><input id="input-name" class="form-control" placeholder="Nome" type="text"></div>
+                <div class="col"><input id="input-lastname" class="form-control" placeholder="Sobrenome" type="text">
+                </div>
             </div>
-            <div id="emailCasa">
-                <input id="input-email" class="form-control" placeholder="Email" type="text">
-                <select id="house" class="form-select">
-                    <option selected>Escolha uma Casa</option>
-                    <option id="gitnoria-house">🦁 Gitnória</option>
-                    <option id="reactpuff-house">🦝 Reactpuff</option>
-                    <option id="corvinode-house">🦅 Corvinode</option>
-                    <option id="pytherina-house">🐍 Pytherina</option>
-                </select>
+            <div id="emailCasa" class="row g-1">
+                <div class="col"><input id="input-email" class="form-control" placeholder="Email" type="text"></div>
+                <div class="col">
+                    <select id="house" class="form-select">
+                        <option selected>Escolha uma Casa</option>
+                        <option id="gitnoria-house">🦁 Gitnória</option>
+                        <option id="reactpuff-house">🦝 Reactpuff</option>
+                        <option id="corvinode-house">🦅 Corvinode</option>
+                        <option id="pytherina-house">🐍 Pytherina</option>
+                    </select>
+                </div>
             </div>
 
             <div class="form-check family">
