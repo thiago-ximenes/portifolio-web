@@ -151,6 +151,8 @@ search.addEventListener('click', (event) => {
   console.log(sectionItems)
   if (sectionItems) sectionItems.forEach((item) => item.remove());
   appendElement('section .items', createProductItemElement, input.value);
+  input.placeholder = input.value;
+  input.value = '';
   })
 // appendElement('section .items', createProductItemElement, input.value)
 
