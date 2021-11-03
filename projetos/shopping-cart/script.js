@@ -1,4 +1,7 @@
 const cartSection = document.querySelector('.cart__items');
+let productSearched;
+const input = document.querySelector('.search input');
+const search = document.querySelector('.button');
 const total = document.querySelector('#sum-price');
 let sum = 0;
 let arrayToLocalStorage = [];
@@ -20,7 +23,6 @@ function createCustomElement(element, className, innerText) {
 function createProductItemElement({ sku, name, image }) {
   const section = document.createElement('section');
   section.className = 'item';
-
   section.appendChild(createCustomElement('span', 'item__sku', sku));
   section.appendChild(createCustomElement('span', 'item__title', name));
   section.appendChild(createProductImageElement(image));
@@ -81,10 +83,10 @@ function removeLoading() {
   const loadingTag = document.querySelector('.loading');
   loadingTag.remove();
 }
-async function products() {
+async function products(inputValue) {
   // Camila Ranniele rainha da paciência. Me ajudou a entender o uso de await.
   loading();
-  const result = await fetchProducts('computador').then((product) =>
+  const result = await fetchProducts(inputValue).then((product) =>
     product.results.reduce((acc, item) => {
     acc.push({
       sku: item.id,
@@ -121,8 +123,8 @@ function productItemToCart({ sku }) {
   return cartSection;
 }
 
-async function appendElement(elementClass, callback) {
-  products().then((product) =>
+async function appendElement(elementClass, callback, inputValue) {
+  products(inputValue).then((product) =>
   product.forEach((productItem, index) => {
     const sectionItems = document.querySelector(elementClass);
     sectionItems.appendChild(callback(productItem));
@@ -142,9 +144,17 @@ function getItemFromLocalStorage() {
     sumPriceFromLocalStorage();
   }
 }
+search.addEventListener('click', (event) => {
+  event.preventDefault();
+  arrayToLocalStorage= []
+  const sectionItems = document.querySelectorAll('section .item');
+  console.log(sectionItems)
+  if (sectionItems) sectionItems.forEach((item) => item.remove());
+  appendElement('section .items', createProductItemElement, input.value);
+  })
+// appendElement('section .items', createProductItemElement, input.value)
 
 window.onload = () => {
-  appendElement('section .items', createProductItemElement);
   getItemFromLocalStorage();
   const cartButton = document.querySelector('.empty-cart');
   cartButton.addEventListener('click', () => {
