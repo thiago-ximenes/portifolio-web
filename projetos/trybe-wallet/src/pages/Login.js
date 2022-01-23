@@ -78,7 +78,7 @@ class Login extends React.Component {
         className="h-screen w-screen flex bg-gray-200"
       >
         <form
-          className="max-w-lg w-full bg-green-300 m-auto rounded
+          className="shadow max-w-lg w-full bg-green-300 m-auto rounded
         p-8 h-auto max-h-full"
         >
           <header>
@@ -95,7 +95,7 @@ class Login extends React.Component {
             <input
               type="email"
               id="email"
-              className="w-full p-1 mb-6 text-green-700 border-b-2 border-green-700"
+              className="w-full p-1 mb-6 text-green-700 border-b-2 border-green-700 shadow"
               name="email"
               onChange={ (e) => {
                 handleChange(e);
@@ -111,7 +111,7 @@ class Login extends React.Component {
             Senha
           </h2>
           <input
-            className="w-full p-1 mb-6 text-green-700 border-b-2 border-green-700"
+            className="w-full p-1 mb-6 text-green-700 border-b-2 border-green-700 shadow"
             value={ password }
             name="password"
             type="password"
@@ -123,7 +123,7 @@ class Login extends React.Component {
           <button
             className="w-full
             bg-green-900 text-white hover:bg-green-600
-            font-bold py-2 px-4 rounded-lg cursor-pointer mb-8
+            font-bold py-2 px-4 rounded-lg cursor-pointer mb-8 shadow-md
             disabled:opacity-25"
             type="submit"
             onClick={ (event) => {
