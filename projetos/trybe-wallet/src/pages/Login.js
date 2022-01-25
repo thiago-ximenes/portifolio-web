@@ -78,8 +78,8 @@ class Login extends React.Component {
         className="h-screen w-screen flex bg-gray-200"
       >
         <form
-          className="shadow max-w-lg w-full bg-green-300 m-auto rounded
-        p-8 h-auto max-h-full"
+          className="shadow-lg max-w-lg w-full bg-green-300 m-auto rounded
+          p-8 h-auto max-h-full"
         >
           <header>
             <h1 className="text-center text-2xl font-bold mb-5">

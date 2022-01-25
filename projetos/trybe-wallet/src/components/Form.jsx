@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getCurrency, SetExpenses } from '../actions/index';
+import Select from './Select';
 
 class Form extends Component {
   constructor() {
@@ -63,6 +64,8 @@ class Form extends Component {
     return (
       <div>
         <input
+          className="px-2 placeholder:italic w-14 border-b-2 border-gray-600 mr-1 rounded-md focus:ring-1 focus:outline-none focus:ring-gray-500 shadow-sm"
+          placeholder="Valor"
           name="value"
           value={ value }
           type="text"
@@ -70,6 +73,8 @@ class Form extends Component {
           onChange={ (e) => handleChange(e) }
         />
         <input
+          className="px-2 placeholder:italic w-fit border-b-2 border-gray-600 mr-1 rounded-md focus:ring-1 focus:outline-none focus:ring-gray-500 shadow-sm"
+          placeholder="Descrição"
           name="description"
           value={ description }
           data-testid="description-input"
@@ -124,8 +129,15 @@ class Form extends Component {
             <option value="Transporte"> Transporte</option>
           </select>
         </label>
+        <Select
+          value={ value }
+          name="test"
+          handleChange={ handleChange }
+          optionValue={ ['test1', 'test2'] }
+          optionName='test'
+        />
         <button
-          type="submit"
+          type="button"
           onClick={ (e) => {
             handleSubmit(e);
           } }

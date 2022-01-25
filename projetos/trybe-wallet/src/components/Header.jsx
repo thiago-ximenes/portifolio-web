@@ -26,11 +26,11 @@ class Header extends Component {
           className="text-center text-2xl font-bold mb-5"
           data-testid="email-field"
         >
-          thiagoximeneslima@gmail.com
+          { email }
         </h2>
         <div className="flex justify-end">
           <span
-            className="text-xl font-bold mb-5 text-blue-700 bg-gray-200 w-fit p-2
+            className="text-xl font-bold mb-5 text-blue-700 w-fit p-2
             rounded shadow-md"
             data-testid="total-field"
           >
