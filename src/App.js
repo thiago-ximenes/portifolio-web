@@ -1,9 +1,11 @@
 import React from 'react';
-import Header from './Header';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div>
+    <div
+      className="bg-tertiary w-screen h-screen font-roboto flex"
+    >
       <Header />
     </div>
   );
