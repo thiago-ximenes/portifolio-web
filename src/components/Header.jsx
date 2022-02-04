@@ -4,8 +4,8 @@ import Button from './Button';
 function Header() {
   return (
     <header
-      className="flex flex-col justify-around w-2/3 h-fit mx-auto pt-7
-      sm:container sm:flex-row sm:max-w-6xl"
+      className="flex flex-col justify-around h-fit mx-auto pt-7
+      sm:container sm:flex-row sm:w-4/5"
     >
       <Button
         text="Descrição"

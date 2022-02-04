@@ -6,7 +6,11 @@ function App() {
     <div
       className="bg-tertiary w-screen h-screen font-roboto flex"
     >
-      <Header />
+      <div
+        className="max-w-[1600px] w-11/12 mx-auto"
+      >
+        <Header />
+      </div>
     </div>
   );
 }
