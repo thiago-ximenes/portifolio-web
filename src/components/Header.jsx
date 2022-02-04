@@ -16,6 +16,9 @@ function Header() {
       <Button
         text="Portifólio"
       />
+      <Button
+        text="Contato"
+      />
     </header>
   );
 }
