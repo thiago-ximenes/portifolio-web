@@ -15,6 +15,7 @@ module.exports = {
       },
       boxShadow: {
         'about': '5px 5px rgba(0, 0, 0, 0.1)',
+        'icons': '-5px 5px 5px 5px rgba(0, 0, 0, 0.1)',
       },
     },
   },

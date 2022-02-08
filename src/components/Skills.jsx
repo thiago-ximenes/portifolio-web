@@ -4,17 +4,28 @@ import separator from '../images/separator.png';
 function Skills() {
   return (
     <section
-      className="justify-center items-center bg-primary rounded-lg"
+      className="flex-col flex justify-center items-center bg-primary rounded-lg
+      text-center"
     >
-      <div>
+      <div
+        className="mt-8 flex items-center justify-around w-full"
+      >
         <img
           src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/terminal-icon.png"
           alt="Terminal icon"
-          class="icons"
+          className="w-24 h-24 shadow-icons rounded-lg"
         />
-        <h2>Hard-skills</h2>
 
-        <ul type="square">
+        <ul
+          type="square"
+          className="list-disc text-xl text-left"
+        >
+          <h2
+            className="text-center text-secondary font-bold text-4xl
+            mb-6"
+          >
+            Hard-skills
+          </h2>
           <li><strong>Programação Web</strong></li>
           <li>Javascript</li>
           <li>React</li>
@@ -30,23 +41,50 @@ function Skills() {
           <li>MySQL</li>
         </ul>
       </div>
-      <div>
-        <img
-          src="https://pngimage.net/wp-content/uploads/2018/06/soft-skill-icon-png-7.png"
-          alt="Emotional Inteligence Icon"
-          className="w-20"
-        />
-
-        <h2 class="soft">Soft-skills</h2>
-
-        <ul>
-          <li>Comunicação</li>
-          <li><strong>Criatividade</strong></li>
-          <li>Resolução de Problemas</li>
-          <li>Liderança</li>
-          <li>Inteligência Emocional</li>
-          <li>Empático</li>
-          <img src={ separator } alt="fruit tree" />
+      <img
+        className="w-[75%] self-center my-10 md:hidden"
+        src={ separator }
+        alt="fruit tree"
+      />
+      <div
+        className="flex items-center justify-around w-full"
+      >
+        <ul
+          className="list-disc text-xl text-left flex flex-col w-full justify-center
+          items-center"
+        >
+          <h2
+            className="text-center text-secondary font-bold text-4xl
+          mb-6"
+          >Soft-skills</h2>
+          <div
+            className="flex w-full justify-start items-end"
+          >
+            <div
+              className="ml-auto"
+            >
+              <li>Comunicação</li>
+              <li><strong>Criatividade</strong></li>
+            </div>
+            <div>
+              <img
+                src="https://pngimage.net/wp-content/uploads/2018/06/soft-skill-icon-png-7.png"
+                alt="Emotional Inteligence Icon"
+                className="w-24 h-24 shadow-icons rounded-lg ml-auto mb-2"
+              />
+            </div>
+          </div>
+          <div>
+            <li>Resolução de Problemas</li>
+            <li>Liderança</li>
+            <li>Inteligência Emocional</li>
+            <li>Empático</li>
+            <img
+              className="w-36 self-center hidden"
+              src={ separator }
+              alt="fruit tree"
+            />
+          </div>
         </ul>
       </div>
     </section>
