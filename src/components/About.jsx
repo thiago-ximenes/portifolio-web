@@ -29,7 +29,7 @@ function About() {
         <p
           className="text-xl md:text-2xl m-4"
         >
-          Sou Desenvolvedor Júnior front-end, utilizo ReactJs e sou apaixonado em programação web. No ramo de panificação eu me apaixonei em entregar o melhor ao cliente, acredito que meus anos de experiência em relacionamento com o cliente, equipe e stakeholder vão entregar softwares impactantes à sociedade.
+          Sou <strong>Desenvolvedor Júnior front-end</strong>, utilizo <strong>ReactJs</strong> e sou apaixonado em <strong>programação web</strong>. No ramo de panificação <em>eu me apaixonei em entregar o melhor ao cliente</em>, acredito que meus anos de experiência em relacionamento com o cliente, equipe e stakeholder vão entregar <strong>softwares impactantes à sociedade</strong>.
         </p>
         <nav
           className="flex justify-around my-7 max-w-2xl mx-auto"

@@ -15,14 +15,17 @@ function Skills() {
         <h2>Hard-skills</h2>
 
         <ul type="square">
-          <li id="destaque" class="tam2"><strong>Programação Web</strong></li>
-          <li>Python</li>
-          <li>Django</li>
+          <li><strong>Programação Web</strong></li>
           <li>Javascript</li>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Python</li>
           <li>HTML5</li>
           <li>CSS3</li>
+          <li>TailwindCSS</li>
+          <li>Bootstrap</li>
+          <li>Material UI</li>
           <li>Git</li>
-          <li>WordPress</li>
           <li>Linux</li>
           <li>MySQL</li>
         </ul>
@@ -37,7 +40,8 @@ function Skills() {
         <h2 class="soft">Soft-skills</h2>
 
         <ul>
-          <li><strong>Comunicativo</strong></li>
+          <li>Comunicação</li>
+          <li><strong>Criatividade</strong></li>
           <li>Resolução de Problemas</li>
           <li>Liderança</li>
           <li>Inteligência Emocional</li>
