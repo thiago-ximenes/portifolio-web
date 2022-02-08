@@ -13,6 +13,9 @@ module.exports = {
         'roboto': ['Roboto', 'sans-serif'],
         'black-ops': ['Black Ops One', 'cursive'],
       },
+      boxShadow: {
+        'about': '5px 5px rgba(0, 0, 0, 0.1)',
+      },
     },
   },
   plugins: [],
