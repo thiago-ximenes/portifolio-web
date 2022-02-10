@@ -8,6 +8,7 @@ function Main() {
       className="mx-auto"
     >
       <h1
+        id="about"
         className="bg-primary rounded-lg text-center mt-4
         text-secondary md:text-7xl text-4xl font-bold font-black-ops py-2"
       >

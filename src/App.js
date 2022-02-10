@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
+import Footer from './components/Footer';
+import Forms from './components/Contact/Forms';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       >
         <Header />
         <Main />
+        <Forms />
+        <Footer />
       </div>
     </div>
   );

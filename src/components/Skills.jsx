@@ -4,6 +4,7 @@ import separator from '../images/separator.png';
 function Skills() {
   return (
     <section
+      id="skills"
       className="flex-col flex justify-center items-start bg-primary rounded-lg
       text-center md:flex-row mb-10 pb-10"
     >

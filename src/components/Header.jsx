@@ -11,15 +11,19 @@ function Header() {
       >
         <Button
           text="Descrição"
+          href="#about"
         />
         <Button
           text="Habilidades"
+          href="#skills"
         />
         <Button
           text="Portifólio"
+          href="#portfolio"
         />
         <Button
           text="Contato"
+          href="#contact"
         />
       </nav
 
