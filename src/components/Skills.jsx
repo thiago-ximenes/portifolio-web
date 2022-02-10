@@ -4,20 +4,13 @@ import separator from '../images/separator.png';
 function Skills() {
   return (
     <section
-      className="flex-col flex justify-center items-center bg-primary rounded-lg
-      text-center"
+      className="flex-col flex justify-center items-start bg-primary rounded-lg
+      text-center md:flex-row mb-10 pb-10"
     >
       <div
-        className="mt-8 flex items-center justify-around w-full"
+        className="mt-8 flex items-center justify-around w-full md:w-1/2"
       >
-        <img
-          src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/terminal-icon.png"
-          alt="Terminal icon"
-          className="w-24 h-24 shadow-icons rounded-lg"
-        />
-
         <ul
-          type="square"
           className="list-disc text-xl text-left"
         >
           <h2
@@ -47,45 +40,29 @@ function Skills() {
         alt="fruit tree"
       />
       <div
-        className="flex items-center justify-around w-full"
+        className="mt-8 flex flex-col items-center justify-center w-full md:w-1/2"
       >
         <ul
-          className="list-disc text-xl text-left flex flex-col w-full justify-center
-          items-center"
+          className="list-disc text-xl text-left"
         >
           <h2
             className="text-center text-secondary font-bold text-4xl
           mb-6"
-          >Soft-skills</h2>
-          <div
-            className="flex w-full justify-start items-end"
           >
-            <div
-              className="ml-auto"
-            >
-              <li>Comunicação</li>
-              <li><strong>Criatividade</strong></li>
-            </div>
-            <div>
-              <img
-                src="https://pngimage.net/wp-content/uploads/2018/06/soft-skill-icon-png-7.png"
-                alt="Emotional Inteligence Icon"
-                className="w-24 h-24 shadow-icons rounded-lg ml-auto mb-2"
-              />
-            </div>
-          </div>
-          <div>
-            <li>Resolução de Problemas</li>
-            <li>Liderança</li>
-            <li>Inteligência Emocional</li>
-            <li>Empático</li>
-            <img
-              className="w-36 self-center hidden"
-              src={ separator }
-              alt="fruit tree"
-            />
-          </div>
+            Soft-skills
+          </h2>
+          <li>Comunicação</li>
+          <li><strong>Criatividade</strong></li>
+          <li>Resolução de Problemas</li>
+          <li>Liderança</li>
+          <li>Inteligência Emocional</li>
+          <li>Empático</li>
         </ul>
+        <img
+          className="w-9/12 mt-20 self-center hidden md:block mx-auto"
+          src={ separator }
+          alt="fruit tree"
+        />
       </div>
     </section>
   );
