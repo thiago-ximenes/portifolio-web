@@ -8,7 +8,7 @@ function App() {
   return (
     <div
       className="bg-tertiary w-screen font-roboto flex
-      h-full justify-center items-center"
+      h-full justify-center items-center text-gray-800"
     >
       <div
         className="max-w-[1600px] w-11/12 mx-auto "
