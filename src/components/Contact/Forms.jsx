@@ -6,7 +6,7 @@ function Forms() {
 
   function sendEmail(e) {
     e.preventDefault();
-    emailjs.sendForm('gmail', 'template_60k676i', e.target, 'user_jWBF295ZL89zz4Nbl1CdS')
+    emailjs.sendForm('service_ao5htql', 'template_60k676i', e.target, 'user_jWBF295ZL89zz4Nbl1CdS')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -63,6 +63,7 @@ function Forms() {
       <textarea
         name="message"
       />
+      <input type="submit" />
     </form>
   )
 }
