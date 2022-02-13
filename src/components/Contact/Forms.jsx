@@ -2,8 +2,8 @@ import emailjs from '@emailjs/browser';
 import React, { useEffect, useRef, useState } from 'react';
 import isEmail from 'validator/lib/isEmail';
 import isMobilePhone from 'validator/lib/isMobilePhone';
-import emailIcon from '../../images/email-icon.png';
 import Input from './Input';
+import { IoSend } from 'react-icons/io5';
 
 function Forms() {
   const form = useRef();
@@ -124,9 +124,13 @@ function Forms() {
           md:hover:scale-110 text-white font-bold py-2 px-4 rounded-lg
           mt-5 w-full text-2xl"
         disabled={ isDisabled }
-        src={ emailIcon }
       >
-        { isDisabled ? <span className="ml-2">Preencha todos os campos</span> : 'Enviar' }
+        <div
+          className="flex items-center justify-center w-full"
+        >
+          { isDisabled ? <span className="ml-2">Preencha todos os campos</span> : 'Enviar' }
+          <IoSend className={`${isDisabled && 'hidden'} ml-2`} />
+        </div>
       </button>
     </form>
   )
