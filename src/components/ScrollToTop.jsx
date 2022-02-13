@@ -51,7 +51,7 @@ function ScrollToTop() {
         className={`cursor-pointer text-white
         fixed bottom-2 right-2 z-12 w-12 h-12
         bg-primary rounded-full shadow-lg
-        p-2 transition-opacity
+        p-2 transition-opacity hover:opacity-100
         ${isVisible ? 'opacity-100' : 'opacity-0'}`}
       />
     </button>
