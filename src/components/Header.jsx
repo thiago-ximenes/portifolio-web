@@ -4,6 +4,7 @@ import Button from './Button';
 function Header() {
   return (
     <header
+      id="header"
     >
       <nav
         className="flex flex-col justify-around h-fit mx-auto pt-7

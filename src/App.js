@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Forms from './components/Contact/Forms';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Main />
         <Forms />
         <Footer />
+        <ScrollToTop />
       </div>
     </div>
   );
