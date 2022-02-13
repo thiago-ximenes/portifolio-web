@@ -4,7 +4,7 @@ import eu from '../images/eu.jpg';
 function About() {
   return (
     <section
-      className="flex md:justify-center items-center"
+      className="flex md:justify-center items-center scroll-smooth"
     >
       <div
         className="md:justify-center md:items-center md:text-center
