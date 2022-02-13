@@ -57,7 +57,7 @@ function Skills() {
           <li>Resolução de Problemas</li>
           <li>Liderança</li>
           <li>Inteligência Emocional</li>
-          <li>Empático</li>
+          <li>Empatia</li>
         </ul>
         <img
           className="w-9/12 mt-20 self-center hidden md:block mx-auto"

@@ -39,7 +39,7 @@ function ScrollToTop() {
   function timeout() {
     setTimeout(() => {
       setIsVisible(false)
-    }, 1000)
+    }, 1500)
   }
 
   return (
@@ -49,9 +49,9 @@ function ScrollToTop() {
     >
       <IoIosArrowUp
         className={`cursor-pointer text-white
-        fixed bottom-2 right-2 z-12 w-12 h-12
+        fixed bottom-2 right-2 z-20 w-20 h-20
         bg-primary rounded-full shadow-lg
-        p-2 transition-opacity hover:opacity-100
+        p-4 transition-opacity hover:opacity-100
         ${isVisible ? 'opacity-100' : 'opacity-0'}`}
       />
     </button>

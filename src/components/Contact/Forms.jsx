@@ -45,7 +45,7 @@ function Forms() {
 
   return (
     <form
-      className="flex flex-col items-center justify-center w-full mx-auto my-4 h-full
+      className="flex flex-col items-center justify-center w-full my-4 h-full
       scroll-smooth"
       ref={ form }
       id="contact"

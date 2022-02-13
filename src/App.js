@@ -2,13 +2,12 @@ import React from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import Forms from './components/Contact/Forms';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div
-      className="bg-tertiary w-screen font-roboto flex
+      className="bg-tertiary w-full font-roboto flex
       h-full justify-center items-center text-gray-800"
     >
       <div
@@ -16,7 +15,6 @@ function App() {
       >
         <Header />
         <Main />
-        <Forms />
         <Footer />
         <ScrollToTop />
       </div>
