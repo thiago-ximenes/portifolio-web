@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Input({ name, id, placeholder, type, label, onChange=null,
-  value='', className=null }) {
+  value='', className=null, disabled=false }) {
   return (
     <>
       <label
@@ -21,6 +21,7 @@ function Input({ name, id, placeholder, type, label, onChange=null,
         name={ name }
         placeholder={ placeholder }
         onChange={ onChange }
+        disabled={ disabled }
       />
     </>
   )
