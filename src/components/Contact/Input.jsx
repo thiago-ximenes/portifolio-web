@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Input({ name, id, placeholder, type, label, onChange=null,
-  value=null, className=null }) {
+  value='', className=null }) {
   return (
     <>
       <label

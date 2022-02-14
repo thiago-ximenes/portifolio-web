@@ -1,15 +1,19 @@
 import emailjs from '@emailjs/browser';
 import React, { useEffect, useRef, useState } from 'react';
+import { IoSend } from 'react-icons/io5';
 import isEmail from 'validator/lib/isEmail';
 import isMobilePhone from 'validator/lib/isMobilePhone';
 import Input from './Input';
-import { IoSend } from 'react-icons/io5';
 
 function Forms() {
   const form = useRef();
   const [emailValue, setEmailValue] = useState('');
   const [phoneValue, setPhoneValue] = useState('');
   const [isDisabled, setIsDisabled] = useState(true);
+  const [subjectValue, setSubjectValue] = useState('');
+  const [messageValue, setMessageValue] = useState('');
+  const [nameValue, setNameValue] = useState('');
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setIsDisabled(!isEmail(emailValue) || !isMobilePhone(phoneValue, 'pt-BR'));
@@ -31,8 +35,17 @@ function Forms() {
     }
   }
 
+  function clearInputs() {
+    setEmailValue('');
+    setPhoneValue('');
+    setSubjectValue('');
+    setMessageValue('');
+    setNameValue('');
+  }
+
   function sendEmail(e) {
     e.preventDefault();
+    setLoading(true);
     emailjs.sendForm('service_ao5htql', 'template_60k676i', e.target, 'user_jWBF295ZL89zz4Nbl1CdS')
       .then((result) => {
         alert('Email enviado com sucesso!');
@@ -41,6 +54,8 @@ function Forms() {
         alert('Ocorreu um erro ao enviar o email. Tente novamente mais tarde.');
         console.log(error.text);
       });
+    setLoading(false);
+    clearInputs();
   }
 
   return (
@@ -65,6 +80,8 @@ function Forms() {
           className="flex flex-col items-center justify-center w-full"
         >
           <Input
+            value={ subjectValue }
+            onChange={ (e) => setSubjectValue(e.target.value) }
             id="subject"
             type="text"
             name="subject"
@@ -73,6 +90,8 @@ function Forms() {
           />
           <Input
             id="name"
+            value={ nameValue }
+            onChange={ (e) => setNameValue(e.target.value) }
             type="text"
             name="name"
             label="Nome"
@@ -110,6 +129,8 @@ function Forms() {
             Mensagem
           </label>
           <textarea
+            value={ messageValue }
+            onChange={ (e) => setMessageValue(e.target.value) }
             className="px-6 py-4 border border-gray-400 rounded-lg focus:outline-none 
                   focus:border-gray-500 w-full font-medium text-lg
                   md:h-[400px] h-[200px] resize-none
