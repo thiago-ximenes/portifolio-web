@@ -38,13 +38,13 @@ function About() {
             className="w-32"
             href="https://www.linkedin.com/in/thiago-ximenes/" target="_blank">
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="Linkedin Profile" class="about-me-icons" />
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="Linkedin Profile" />
           </a>
           <a
             className="w-32"
             href="https://github.com/thiago-ximenes" target="_blank">
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="Github Profile" class="about-me-icons" />
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="Github Profile" />
           </a>
         </nav>
       </div>

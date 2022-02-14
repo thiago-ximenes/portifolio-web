@@ -12,7 +12,7 @@ function Skills() {
         className="mt-8 flex items-center justify-around w-full md:w-1/2"
       >
         <ul
-          className="list-disc text-xl text-left"
+          className="list-disc text-3xl text-left"
         >
           <h2
             className="text-center text-secondary font-bold text-4xl
@@ -44,7 +44,8 @@ function Skills() {
         className="mt-8 flex flex-col items-center justify-center w-full md:w-1/2"
       >
         <ul
-          className="list-disc text-xl text-left"
+          className="list-disc text-3xl text-left
+          flex flex-wrap flex-col ml-14 mr-2"
         >
           <h2
             className="text-center text-secondary font-bold text-4xl
