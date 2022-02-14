@@ -150,8 +150,8 @@ function Forms() {
       </div>
       <button
         type="submit"
-        className="disabled:bg-red-300 cursor-pointer bg-green-500
-          md:hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg
+        className="disabled:bg-red-300 disabled:cursor-default cursor-pointer bg-green-500
+          md:hover:bg-green-600 md:disabled:hover:bg-red-300 text-white font-bold py-2 px-4 rounded-lg
           mt-5 w-full text-2xl"
         disabled={ isDisabled }
       >
