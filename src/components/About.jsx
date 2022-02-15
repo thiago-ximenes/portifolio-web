@@ -27,7 +27,7 @@ function About() {
           </a>
         </div>
         <p
-          className="text-xl md:text-2xl m-4"
+          className="text-2xl md:text-2xl m-4"
         >
           Sou <strong>Desenvolvedor Front-end Júnior</strong>, aprendendo <strong>Back-end</strong> e caminhando pro <strong>Fullstack</strong>. Utilizo <strong>ReactJs</strong> e sou apaixonado em <strong>programação web</strong>. <strong>Resolver problemas é o combustível que me move!</strong> No ramo de panificação eu <em>me apaixonei em entregar o melhor ao cliente</em>, acredito que meus anos de experiência em relacionamento com o cliente, equipe e stakeholder vão entregar <strong>softwares impactantes à sociedade</strong>. Estou em constante evolução, aprender sempre!
         </p>

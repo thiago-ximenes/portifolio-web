@@ -9,10 +9,11 @@ function Skills() {
       text-center md:flex-row mb-10 pb-10"
     >
       <div
-        className="mt-8 flex items-center justify-around w-full md:w-1/2"
+        className="mt-8 flex items-center justify-around w-full md:w-1/2
+        md:border-r-4 md:border-gray-800"
       >
         <ul
-          className="list-disc text-3xl text-left"
+          className="list-disc text-2xl text-left"
         >
           <h2
             className="text-center text-secondary font-bold text-4xl
@@ -44,7 +45,7 @@ function Skills() {
         className="mt-8 flex flex-col items-center justify-center w-full md:w-1/2"
       >
         <ul
-          className="list-disc text-3xl text-left
+          className="list-disc text-2xl text-left
           flex flex-wrap flex-col ml-14 mr-2"
         >
           <h2
@@ -60,11 +61,11 @@ function Skills() {
           <li>Inteligência Emocional</li>
           <li>Empatia</li>
         </ul>
-        <img
+        {/* <img
           className="w-9/12 mt-20 self-center hidden md:block mx-auto"
           src={ separator }
           alt="fruit tree"
-        />
+        /> */}
       </div>
     </section>
   );
