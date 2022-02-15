@@ -8,16 +8,22 @@ function Carousel() {
 
   function nextProject(e) {
     e.preventDefault();
-    console.log(carouselRef.current.offsetWidth);
+    carouselRef.current.scrollLeft += carouselRef.current.offsetWidth;
+  }
+
+  function previewsProject(e) {
+    e.preventDefault();
+    carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth;
   }
 
   return (
     <section
+      id="portifolio"
       className="flex flex-col overflow-x-auto"
     >
       <div
         ref={ carouselRef }
-        className="flex flex-row overflow-x-auto"
+        className="flex flex-row overflow-x-auto scroll-smooth scrollbar"
       >
         {projectsArray.map((project) => (
           <img
@@ -34,6 +40,7 @@ function Carousel() {
       >
         <button
           type="button"
+          onClick={ previewsProject }
         >
           <FaChevronCircleLeft
             className="w-20 h-20"
