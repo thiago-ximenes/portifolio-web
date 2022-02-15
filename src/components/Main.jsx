@@ -18,7 +18,7 @@ function Main() {
       </h1>
       <About />
       <Skills />
-      <Carousel />
+      {/* <Carousel /> */}
       <Forms />
     </main>
   );
