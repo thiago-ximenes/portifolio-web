@@ -5,11 +5,12 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="flex-col flex justify-center items-start bg-primary rounded-lg
+      className="flex-col flex justify-center items-start rounded-lg
       text-center md:flex-row mb-10 pb-10"
     >
       <div
-        className="mt-8 flex items-center justify-around w-full md:w-1/2"
+        className="mt-8 flex items-center justify-around w-full md:w-1/2
+        border-r-4 border-gray-800"
       >
         <ul
           className="list-disc text-3xl text-left"
@@ -60,11 +61,6 @@ function Skills() {
           <li>Inteligência Emocional</li>
           <li>Empatia</li>
         </ul>
-        <img
-          className="w-9/12 mt-20 self-center hidden md:block mx-auto"
-          src={ separator }
-          alt="fruit tree"
-        />
       </div>
     </section>
   );
