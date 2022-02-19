@@ -20,7 +20,7 @@ function Header() {
         />
         <Button
           text="Portifólio"
-          href="#portfolio"
+          href="#portifolio"
         />
         <Button
           text="Contato"

@@ -10,7 +10,7 @@ function Skills() {
     >
       <div
         className="mt-8 flex items-center justify-around w-full md:w-1/2
-        border-r-4 border-gray-800"
+        md:border-r-4 md:border-gray-800"
       >
         <ul
           className="list-disc text-3xl text-left"
