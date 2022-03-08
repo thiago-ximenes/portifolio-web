@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import InputMask from 'react-input-mask';
 
-function Input({ name, id, placeholder, type, label, onChange=null,
+function Input({ name, mask, id, placeholder, type, label, onChange=null,
   value='', className=null, disabled=false }) {
   return (
     <>
@@ -10,7 +11,8 @@ function Input({ name, id, placeholder, type, label, onChange=null,
       >
         { label }
       </label>
-      <input
+      <InputMask
+        mask={mask}
         value={ value }
         className={
           `${className} px-6 py-4 border border-gray-400 rounded-lg focus:outline-none 

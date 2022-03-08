@@ -115,6 +115,7 @@ function Forms() {
             onChange={ (e) => handleChange(e) }
           />
           <Input
+            mask="(99) 99999-9999"
             disabled={ loading }
             value={ phoneValue}
             className={ `${isMobilePhone(phoneValue) ? 'bg-green-200' : 'bg-red-200'} ${loading &&'cursor-not-allowed'}` }

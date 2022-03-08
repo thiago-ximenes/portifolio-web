@@ -2,7 +2,7 @@ import React from 'react';
 import About from './About';
 import Skills from './Skills';
 import Forms from './Contact/Forms';
-import Carousel from './Portifolio/Carousel';
+import Carousel from './Portifolio/Carousel.tsx';
 
 function Main() {
   return (
