@@ -21,11 +21,13 @@ const SpotlightProjects: React.FC = () => {
                 className="my-5"
               />
               <h3
-                className="text-center mt-4 text-2xl font-bold"
+                className="text-center mt-4 text-2xl font-bold md:text-5xl md:my-10"
               >
                 { project.name }
               </h3>
-              <p className="text-center text-xl my-3">
+              <p
+                className="md:text-center text-xl my-3 text-justify md:text-3xl md:mb-10"
+              >
                 { project.description }
               </p>
               <div
@@ -45,15 +47,15 @@ const SpotlightProjects: React.FC = () => {
                 />
               </div>
               <div
-                className="flex flex-col justify-around h-fit w-full mx-auto py-4"
+                className="flex flex-col md:flex-row w-full justify-around h-fit mx-auto py-4 md:my-8"
               >
                 <Button 
                 >
                   <div
-                    className="flex flex-row justify-center items-center"
+                    className="flex flex-row justify-center items-center md:text-3xl md:my-2"
                   >Ver Todos
                     <BsChevronDoubleRight
-                      className="ml-4"
+                      className="ml-4 md:text-3xl"
                     />
                   </div>
                 </Button>
