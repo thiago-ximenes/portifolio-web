@@ -4,7 +4,7 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
-function App() {
+const App : React.FC = () => {
   return (
     <div
       className="bg-tertiary w-full font-roboto flex

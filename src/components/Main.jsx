@@ -2,7 +2,7 @@ import React from 'react';
 import About from './About';
 import Skills from './Skills';
 import Forms from './Contact/Forms';
-import Carousel from './Portifolio/Carousel';
+import SpotlightProjects from './Portifolio/SpotlightProjects';
 
 function Main() {
   return (
@@ -18,7 +18,7 @@ function Main() {
       </h1>
       <About />
       <Skills />
-      <Carousel />
+      <SpotlightProjects />
       <Forms />
     </main>
   );

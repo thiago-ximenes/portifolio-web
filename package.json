@@ -1,14 +1,4 @@
 {
-  "root": true,
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint"
-  ],
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
   "name": "thiago-ximenes.github.io",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +9,6 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.21",
-    "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
     "lint-staged": "^12.3.5",
     "react": "^17.0.2",
@@ -38,8 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "lint": "eslint --ext .js,.jsx, ts, tsx src",
-    "lint:fix": "eslint --ext .js,.jsx, ts, tsx src --fix",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx src --fix",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
@@ -69,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^17.0.40",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "autoprefixer": "^10.4.2",

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Button({ text, href }) {
+const Button = ({ text, href }) => {
   return (
     <a
       href={ href }
