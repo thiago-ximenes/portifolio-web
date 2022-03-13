@@ -2,7 +2,7 @@ import React from 'react'
 
 const SpotlightProjects: React.FC = () => {
   return (
-    <div>SpotlightProjects</div>
+    <section id="portifolio">SpotlightProjects</section>
   )
 }
 
