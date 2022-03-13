@@ -5,6 +5,7 @@ import ReactLoading from 'react-loading';
 import isEmail from 'validator/lib/isEmail';
 import isMobilePhone from 'validator/lib/isMobilePhone';
 import Input from './Input';
+import H2Styled from '../H2Styled';
 
 function Forms() {
   const form = useRef();
@@ -68,13 +69,7 @@ function Forms() {
       id="contact"
       onSubmit={ sendEmail }
     >
-      <h2
-        className="text-center mt-4
-        text-secondary md:text-7xl text-4xl font-bold font-black-ops py-2
-        md:w-full"
-      >
-        Entre em contato, tire suas dúvidas
-      </h2>
+      <H2Styled title="Entre em contato, tire suas dúvidas"/>
       <div
         className="flex flex-col md:flex-row items-center w-full my-4"
       >
