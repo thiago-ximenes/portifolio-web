@@ -1,4 +1,3 @@
-import React from 'react';
 import separator from '../images/separator.png';
 
 function Skills() {
@@ -44,16 +43,16 @@ function Skills() {
       <div
         className="mt-8 flex flex-col items-center justify-center w-full md:w-1/2"
       >
+        <h2
+          className=" text-secondary font-bold text-4xl
+          mb-6"
+        >
+            Soft-skills
+        </h2>
         <ul
           className="list-disc text-2xl text-left
           flex flex-wrap flex-col ml-14 mr-2"
         >
-          <h2
-            className="text-center text-secondary font-bold text-4xl
-          mb-6"
-          >
-            Soft-skills
-          </h2>
           <li>Comunicação</li>
           <li><strong>Criatividade</strong></li>
           <li>Resolução de Problemas</li>

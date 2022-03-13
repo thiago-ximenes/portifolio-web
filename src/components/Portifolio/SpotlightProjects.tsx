@@ -15,13 +15,17 @@ const SpotlightProjects: React.FC = () => {
         projectsArray?.map((project) => {
           if (project.id === 3) return (
             <>
-              <img src={ project.image } alt={ project.name } />
+              <img
+                src={ project.image }
+                alt={ project.name }
+                className="my-5"
+              />
               <h3
                 className="text-center mt-4 text-2xl font-bold"
               >
                 { project.name }
               </h3>
-              <p className="text-center text-base mb-2">
+              <p className="text-center text-xl my-3">
                 { project.description }
               </p>
               <div
@@ -41,7 +45,7 @@ const SpotlightProjects: React.FC = () => {
                 />
               </div>
               <div
-                className="flex flex-col justify-around h-fit w-full mx-auto pt-4"
+                className="flex flex-col justify-around h-fit w-full mx-auto py-4"
               >
                 <Button 
                 >
