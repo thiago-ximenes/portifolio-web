@@ -21,7 +21,7 @@ const projectsArray: Array<ProjectsDataTypes> = [{
 {
   id: 3,
   name: 'Todo List',
-  description: 'A simple todo list application that allows you to create, edit and delete your tasks.',
+  description: 'Uma aplicação simples de lista de tarefas que permite criação, edição e exclusão de tarefas. Primeiro projeto no qual utilizei Typescript e Tests - com Jest e React Test Library.',
   image: Todo,
   gitHubUrl: 'https://github.com/thiago-ximenes/todo-typescript',
   liveUrl: 'https://todolistts.herokuapp.com/',
