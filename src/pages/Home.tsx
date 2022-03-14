@@ -1,7 +1,7 @@
 import React from 'react';
-import Routes from './routes/Routes';
+import Main from '../components/Main';
 
-const App : React.FC = () => {
+const Home : React.FC = () => {
   return (
     <div
       className="bg-tertiary w-full font-roboto flex
@@ -10,10 +10,10 @@ const App : React.FC = () => {
       <div
         className="max-w-[1600px] w-11/12 mx-auto "
       >
-        <Routes />
+        <Main />
       </div>
     </div>
   );
 }
 
-export default App;
+export default Home;

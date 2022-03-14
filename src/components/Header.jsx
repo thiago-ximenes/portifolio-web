@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import AsyncButton from './AsyncButton';
 
 function Header() {
   return (
@@ -10,19 +10,23 @@ function Header() {
         className="flex flex-col justify-around h-fit mx-auto pt-7
       md:container md:flex-row md:w-4/5"
       >
-        <Button
+        <AsyncButton
+          text="Home"
+          href="/"
+        />
+        <AsyncButton
           text="Descrição"
           href="#about"
         />
-        <Button
+        <AsyncButton
           text="Habilidades"
           href="#skills"
         />
-        <Button
+        <AsyncButton
           text="Portifólio"
           href="#portifolio"
         />
-        <Button
+        <AsyncButton
           text="Contato"
           href="#contact"
         />
